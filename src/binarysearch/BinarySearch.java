@@ -10,8 +10,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * This is my recursive re-write of the books version of iterative binary search
  *
- * @author ^_^
+ * @author Timothy Bradford
  */
 public class BinarySearch {
 
@@ -91,9 +92,9 @@ public class BinarySearch {
     }
 
     /**
-     *  my modification of the book method to format string output
-     * I did not think it was good to have console output happening all
-     * over when it could be done cleaner in one place
+     * my modification of the book method to format string output I did not
+     * think it was good to have console output happening all over when it could
+     * be done cleaner in one place
      *
      * @param data the sorted array to be searched
      * @param low low end of the search area
@@ -115,10 +116,10 @@ public class BinarySearch {
         int temp = temporary.length();
         temporary.append("\n");
 
-        for (int i = 0; i < (temp/2) + (low/2); i++) {
+        for (int i = 0; i < (temp / 2) + (low / 2); i++) {
             temporary.append(" ");
         }
-        
+
         temporary.append("*");
 
         return String.format("%s%n", temporary);
