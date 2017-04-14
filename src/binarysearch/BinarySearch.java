@@ -33,7 +33,7 @@ public class BinarySearch {
         System.out.print(remainingElements(data, startingIndex, endingIndex));
 
         //if the key is less than the start it is not in the array
-        if (searchKey < startingIndex) {
+        if (endingIndex < startingIndex) {
             return -1;
         }
 
